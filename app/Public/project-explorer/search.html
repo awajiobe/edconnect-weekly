@@ -3,18 +3,18 @@
     <h2>One Stop Database for Academic Projects</h2>
  </header>
  <nav>
-     <ul>
-         <li><a href="/index.html">Home</a></li>
-         <li><a href="/search.html">Projects</a></li>
-         <li><a href="/login.html">Login</a></li>
-         <li><a href="/register.html">Register</a></li>
-     </ul>
+     <a href="index.html">Home</a>
+     <a href="search.html">Projects</a>
+     <a href="login.html">Login</a>
+     <a href="register.html">Register</a>
+     <a href="creatproject.html">Submit</a>
  </nav>
  <main>
+     <section>
      <form>
         <h2>Search Project By</h2>
          <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"/>
-         <h3>Search By</h3>
+         <h3>Search By:</h3>
          <select>
              <option value="name">Name</option>
              <option value="abstract">Abstract</option>
@@ -22,6 +22,8 @@
              <option value="tags">Tags</option>
          </select>
      </form>
+     </section>
+     <section>
      <h2>Search Result</h2>
      <div>
          <h3>Project 1</h3>
@@ -34,4 +36,5 @@
              <li>Year: 2018</li>
          </ul>
      </div>
+     </section>
  </main>
