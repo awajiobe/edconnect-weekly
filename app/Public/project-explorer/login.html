@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <h1>Project Explorer</h1> 
-    <h2>One Stop Database for Academic Projects</h2>
+<head>
+ <title>Project Explorer</title>
+ </head>
+<body> 
+ <header>
+     <h1>Project Explorer</h1>
+     <h2>One Stop Database For Academic Projects</h2>
  </header>
  <nav>
      <a href="index.html">Home</a>
      <a href="search.html">Projects</a>
      <a href="login.html">Login</a>
      <a href="register.html">Register</a>
-     <a href="creatproject.html">Submit</a>
  </nav>
  <main>
      <h1>Login</h1>
      <form>
          <div>
             <label>Email Address:</label>
-            <input type="email" name="email"/>
+            <input type="email" name="email" id="email" required/><br/><br/>
          </div>
 
          <div>
             <label>Password:</label>
-            <input type="password" name="password"/>
+            <input type="password" name="password" id="password" required/><br/><br/>
          </div>
 
          <div>
-            <input type="submit"/>
+            <input type="submit" id="submit" required/>
          </div>
      </form>
  </main>
+ <footer></footer>
+ </body>
 </html>

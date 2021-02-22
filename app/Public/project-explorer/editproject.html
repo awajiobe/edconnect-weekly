@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <h1>Project Explorer</h1> 
-    <h2>One Stop Database for Academic Projects</h2>
+<head>
+ <title>Project Explorer</title>
+ </head>
+<body> 
+ <header>
+     <h1>Project Explorer</h1>
+     <h2>One Stop Database For Academic Projects</h2>
  </header>
  <nav>
      <a href="index.html">Home</a>
      <a href="search.html">Projects</a>
      <a href="login.html">Login</a>
      <a href="register.html">Register</a>
-     <a href="creatproject.html">Submit</a>
  </nav>
  <main>
      <section>
@@ -22,19 +25,21 @@
      </section>
      <section>
      <h1>Edit Project</h1>
-     <form name="editProject"><br>
-         <label>Project Name:</label><br>
-         <input type="text" name="name"/><br>
-         <label>Project Abstract:</label><br>
-         <textarea type="text" name="abstract"></textarea><br>
-         <label>Authors:</label>
-         <input type="text" name="authors"/>
-         <label>Tag(s)</label>
-         <input type="text" name="tags"/>
-         <label>Upload File</label>
-         <input type="file" name="projectFile"/>
-         <input type="submit"/>
+     <form name="editProject"><br/>
+         <label>Project Name:</label><br/>
+         <input type="text" name="name" required/><br>/<br/>
+         <label>Project Abstract:</label><br/>
+         <textarea type="text" name="abstract"></textarea><br/><br/>
+         <label>Authors:</label><br/>
+         <input type="text" name="authors" required/><br/><br/>
+         <label>Tag(s)</label><br/>
+         <input type="text" name="tags" required/><br/><br/>
+         <label>Upload File</label><br/>
+         <input type="file" name="projectFile" required/><br/><br/>
+         <input type="submit" required/><br/><br/>
      </form>
-     </section>
- </main>
-</html>
+    </section>
+</main>
+<footer></footer>
+</body>
+<html

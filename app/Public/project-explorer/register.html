@@ -9,30 +9,29 @@
      <a href="search.html">Projects</a>
      <a href="login.html">Login</a>
      <a href="register.html">Register</a>
-     <a href="creatproject.html">Submit</a>
  </nav>
  <main>
      <h1>Signup</h1>
      <form>
             <label>First Name:</label><br>
-            <input type="text" name="firstName"/><br>
+            <input type="text" name="firstName" required/><br/><br/>
             <label>Last Name:</label><br>
-            <input type="text" name="lastName"/><br>
+            <input type="text" name="lastName" required/><br/><br/>
             <label>Email Address:</label><br>
-            <input type="email" name="email"/><br>
+            <input type="email" name="email" required/><br/><br/>
             <label>Password:</label><br>
-            <input type="password" name="password"/><br>
+            <input type="password" name="password" required/><br/><br/>
             <label>Matric Number:</label><br>
-            <input type="text" name="matricNumber"/><br>
-         <label>Program:</label><br>
-         <select>
+            <input type="text" name="matricNumber" required/><br/><br/>
+         <label>Program:</label><br/><br/>
+         <select name="program">
              <option value="computer_science">Computer Science</option>
              <option value="computer_information_systems">Computer Information Systems</option>
              <option value="computer_technology">Computer Technology</option>
-         </select>
+         </select><br/><br/>
          <div>
-         <label>Graduation Year:</label><br>
-         <select>
+         <label>Graduation Year:</label>
+         <select name="graduationYear">
              <option value="2013">2013</option>
              <option value="2014">2014</option>
              <option value="2015">2015</option>
@@ -42,7 +41,7 @@
              <option value="2019">2019</option>
              <option value="2020">2020</option>
          </div>
-         </select>
+         </select><br/><br/>
          <div>
          <input type="submit"/><br>
          </div>

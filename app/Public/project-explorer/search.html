@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <h1>Project Explorer</h1> 
-    <h2>One Stop Database for Academic Projects</h2>
+<head>
+ <title>Project Explorer</title>
+ </head>
+<body> 
+ <header>
+     <h1>Project Explorer</h1>
+     <h2>One Stop Database For Academic Projects</h2>
  </header>
  <nav>
      <a href="index.html">Home</a>
      <a href="search.html">Projects</a>
      <a href="login.html">Login</a>
      <a href="register.html">Register</a>
-     <a href="creatproject.html">Submit</a>
  </nav>
  <main>
-     <section>
-        <h2>Search Project By</h2>
-     <form name="searcForm">
-         <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"/>
-         <h3>Search By:</h3>
-         <select>
+    <section>
+     <h3>Search Project By</h3>
+      <form name="searcForm">
+         <input type="text" placeholder="Project Name, Authors, Abstract, Tags" name="searchTerm" required/><br/><br/>
+         <label for="searchType">Search By</label><br/>
+         <select name="searchType">
              <option value="name">Name</option>
              <option value="abstract">Abstract</option>
-             <option value="author">Author</option>
-             <option value="tags">Tags</option>
-         </select>
+             <option value="authors">Authors</option>
+             <option value="tags">Tags</option></select><br/><br/>
+             <input type="submit" value="search" re/>
      </form>
      </section>
      <section>
-     <h1>Search Result</h1>
+     <h2>Search Result</h2>
+     <h3>Project 1</h3>
      <div>
-         <h2>Project 1</h2>
          <ul>
-             <li>Name: Project 1</li>
-             <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a rhoncus diam, ut egestas nibh. In hac habitasse platea dictumst. Mauris pulvinar, purus non suscipit dapibus, nulla erat gravida nisi, at tristique velit orci et mi.</li>
+             <li id="projectName">Name: Project 1</li>
+             <li id="projectDesc">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a rhoncus diam, ut egestas nibh. In hac habitasse platea dictumst. Mauris pulvinar, purus non suscipit dapibus, nulla erat gravida nisi, at tristique velit orci et mi.</li>
              <li>Program: Computer Science</li>
              <li>Authors: John Doe, Jane Doe</li>
              <li>Tags: #Asphyxia, #GSW</li>
@@ -40,4 +43,6 @@
      </div>
      </section>
  </main>
+ <footer></footer>
+ </body>
 </html>
